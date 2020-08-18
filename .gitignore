@@ -2,3 +2,5 @@ out/
 .idea/
 airport.iml
 gradle/
+.gradle/
+build/
