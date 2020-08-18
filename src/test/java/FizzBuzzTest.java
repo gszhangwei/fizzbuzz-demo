@@ -10,4 +10,11 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.covert(number), is("Fizz"));
     }
+
+    @Test
+    public void should_return_buzz_when_number_is_multiple_of_5() {
+        int number = 5;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.covert(number), is("Buzz"));
+    }
 }
