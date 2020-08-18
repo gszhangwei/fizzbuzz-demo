@@ -4,3 +4,6 @@ airport.iml
 gradle/
 .gradle/
 build/
+ .gradle/5.2.1/executionHistory/
+ .gradle/5.2.1/fileHashes
+ .gradle/buildOutputCleanup
