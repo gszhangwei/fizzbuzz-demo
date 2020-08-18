@@ -5,16 +5,18 @@ public class FizzBuzz {
         if(isNegativeNum(number)) {
             throw new NonPositiveNumberException();
         }
-        if(isMultipleOf3(number) && isMultipleOf5(number)) {
-            return "FizzBuzz";
-        }
+        return buildFizzBuzz(number);
+    }
+
+    private String buildFizzBuzz(int number) {
+        String result = "";
         if(isMultipleOf3(number)) {
-            return "Fizz";
+            result += "Fizz";
         }
         if(isMultipleOf5(number)) {
-            return "Buzz";
+            result += "Buzz";
         }
-        return null;
+        return result;
     }
 
     private boolean isMultipleOf5(int number) {
