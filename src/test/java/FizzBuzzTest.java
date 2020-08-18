@@ -26,6 +26,12 @@ public class FizzBuzzTest {
         assertThat(fizzBuzz.covert(number), is("FizzBuzz"));
     }
 
+    @Test
+    public void should_return_same_number_when_number_is_not_multiple_of_3_or_5() throws NonPositiveNumberException {
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.covert(2), is("2"));
+    }
+
     @Test(expected = NonPositiveNumberException.class)
     public void should_threw_exception_when_number_is_negative() throws NonPositiveNumberException {
         FizzBuzz fizzBuzz = new FizzBuzz();

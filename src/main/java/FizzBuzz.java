@@ -16,6 +16,9 @@ public class FizzBuzz {
         if(isMultipleOf5(number)) {
             result += "Buzz";
         }
+        if(result.isEmpty()) {
+            result += number;
+        }
         return result;
     }
 
