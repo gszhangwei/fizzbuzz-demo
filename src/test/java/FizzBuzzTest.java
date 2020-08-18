@@ -17,4 +17,11 @@ public class FizzBuzzTest {
         FizzBuzz fizzBuzz = new FizzBuzz();
         assertThat(fizzBuzz.covert(number), is("Buzz"));
     }
+
+    @Test
+    public void should_return_fizz_buzz_when_number_is_multiple_of_3_and_5() {
+        int number = 15;
+        FizzBuzz fizzBuzz = new FizzBuzz();
+        assertThat(fizzBuzz.covert(number), is("FizzBuzz"));
+    }
 }
